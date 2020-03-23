@@ -1,0 +1,11 @@
+		depth (m)	28.4	61.2	86.4	108.8	135.6	186.5	234.7	288.8
+#OTU ID	depth_bin	taxonomy	S0064	S0065	S0066	S0067	S0068	S0069	S0070	S0071
+98a41f8c8b7a74929b34362e498451c2	surface	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade; D_4__uncultured bacterium; D_5__uncultured bacterium; D_6__uncultured bacterium	0.007091796210144	0.007412532120973	0.001210694467799	0	0	0	0	0
+3d0d96ced1f2cb596c86e245d598baa2	surface	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade; D_4__uncultured marine bacterium; D_5__uncultured marine bacterium; D_6__uncultured marine bacterium	0.005862551533719	0.006687751202477	0.002253236926181	0.000651671636486	0	0	0	0
+84116e0fbfc1cc20a9945f057e7e2e0b	surface	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade; Ambiguous_taxa; Ambiguous_taxa; Ambiguous_taxa	0.003990317334241	0.007017197074521	0.000874390448966	0	0	0	0	0
+55971ffc1718eb3f8d1d8043bc11d097	surface	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade; D_4__uncultured marine bacterium; D_5__uncultured marine bacterium; D_6__uncultured marine bacterium	0.003763379855516	0.004019239638927	0	0	0	0	0	0
+fa55afe01fad70559b16c332008085f1	surface	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade	0.000680812436174	0.000593002569678	0	0	0	0	0	0
+ab8713aab2e3548dfad39f6e82f9ed4d	surface	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade	0.000567343696812	0.000625947156882	0	0	0	0	0	0
+688958852d47c0654c2409ee986a49e9	deep	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade	0	0	0	0.000197476253481	0.000871698189706	0	0.00154913213393	0.001602521300179
+7e827fb5b75b230c4e2a620de3977cd7	deep	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade	0	0	0	0.001895772033413	0.00573699041132	0.00680981595092	0.006935887054184	0.005688950615635
+6fbb86cddfe9371efb1bea24471cf57c	deep	D_0__Bacteria; D_1__Proteobacteria; D_2__Gammaproteobacteria; D_3__SAR86 clade; D_4__uncultured gamma proteobacterium HF4000_19M20; D_5__uncultured gamma proteobacterium HF4000_19M20; D_6__uncultured gamma proteobacterium HF4000_19M20	0	0	0	0	0	0.003006134969325	0.002429320846389	0.001121764910125

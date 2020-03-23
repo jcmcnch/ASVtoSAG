@@ -1,0 +1,46 @@
+Methods from PTR paper (https://www.biorxiv.org/content/10.1101/786939v1):
+
+The maximum growth rate of each MAG was predicted using a customized growthpred
+v1.0.8 (available at https://hub.docker.com/r/shengwei/growthpred) in metagenome mode (-m)
+and with universal codons (-c 0). Blast-retrieved ribosomal protein sequences were used as the
+highly expressed genes (-b) and compared to all the coding sequences of each MAG (-g).
+
+Shengwei's original script:
+
+```
+# ----------
+# GrowthPred
+# ----------
+
+GrowthPred_CONTAINER="MarDBv3_growthpred"
+GrowthPred_DIR="01_MarDBv3_GrowthPred"
+mkdir -p ${GrowthPred_DIR}
+
+#:<<'COMMENT'
+# initialize a container in background
+docker run -t -d --rm \
+           -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro \
+           -u $(id -u $USER):$(id -g $USER) \
+           -v $PWD:/mnt \
+           --name ${GrowthPred_CONTAINER} shengwei/growthpred:latest
+
+# without heg
+for cds_file in `ls ${MarDBv3_nucl_folder}/*.fasta`; do
+    cds_filename=$(basename $cds_file)
+    cds_filestem=${cds_filename%.fasta}
+    echo ${cds_file}
+
+#    if [ ! -f ${GrowthPred_DIR}/${cds_filestem}.results ]; then
+    /home/shengwei/scripts/filter_non_3_nucl_cds.py --out_folder ${GrowthPred_DIR} --prefix ${cds_filestem}_input ${cds_file}
+
+    cmd="/growthpred/growthpred-v1.08.py -d ${GrowthPred_DIR} -g ${cds_filestem}_input.fa \
+                   -s -S -c 0 -t -m -b -o ${GrowthPred_DIR}/${cds_filestem} 2>&1 | tee -a ${GrowthPred_DIR}/growthpred.log"
+    echo $cmd
+    docker exec ${GrowthPred_CONTAINER} /bin/bash -c "$cmd"
+#    fi
+done
+
+# kill container
+docker container kill ${GrowthPred_CONTAINER}
+#COMMENT
+```
