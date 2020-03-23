@@ -1,10 +1,10 @@
 # Context
 
-ASVs give us high-resolution distributions across space and time, but don't have good genomic context which could inform physiological inferences.
+ASVs give us high-resolution distributions across space and time, but don't have good genomic context which could inform physiological inferences. But, now we have a lot of SAGs which could help with this. Analyzing them and correlating with 16S is more straightforward than for MAGs.
 
-As a test case, I took some SAR86 ASVs from one station on the GA03 cruise:
+So, ss a test case, I took some SAR86 ASVs from one station on the GA03 cruise:
 
-![alt text](https://github.com/jcmcnch/ASVtoSAG/raw/master/SAR86.svg "SAR86 ASV depth distributions at stn3 GA03 cruise track, GEOTRACES")
+![SAR86 ASV depth distributions at stn3 GA03 cruise track, GEOTRACES](https://github.com/jcmcnch/ASVtoSAG/blob/master/SAR86.svg)
 
 Goal: take these ASVs and find SAGs with 16S perfectly matching.
 
