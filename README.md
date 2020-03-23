@@ -6,7 +6,7 @@ So, ss a test case, I took some SAR86 ASVs from one station on the GA03 cruise:
 
 ![SAR86 ASV depth distributions at stn3 GA03 cruise track, GEOTRACES](https://github.com/jcmcnch/ASVtoSAG/blob/master/SAR86.svg)
 
-Goal: take these ASVs and find SAGs with 16S perfectly matching.
+Goal: take these ASVs and find SAGs with 16S perfectly matching, then investigate the very general properties of their genomes to see if we can find information compatible with model approximations.
 
 # General workflow:
 
@@ -18,5 +18,6 @@ Goal: take these ASVs and find SAGs with 16S perfectly matching.
 
 # Results:
 
--So far, no deep ecotype matches for the GORG SAGs, but all surface SAGs have perfect matches.
--One 
+* So far, no deep ecotype matches for the GORG SAGs, but all surface SAGs have perfect matches. This is likely to do with sampling biases.
+* ASV-specific groups of genomes seem to share mostly the same GC content, suggesting ecological coherence.
+* Predicted growth rates are similar, except for one ASV genome group which has a faster growth rate and smaller genome size. Perhaps this suggests the physiologies of the organisms represented by these ASVs are very similar.
